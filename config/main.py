@@ -1410,7 +1410,7 @@ def mgmt_ip_restart_services():
 @click.argument('interface_mtu', metavar='<interface_mtu>', required=True)
 @click.option('-v', '--verbose', is_flag=True, help="Enable verbose output")
 def mtu(ctx, interface_name, interface_mtu, verbose):
-    """Set interface speed"""
+    """Set interface mtu"""
     if get_interface_naming_mode() == "alias":
         interface_name = interface_alias_to_name(interface_name)
         if interface_name is None:

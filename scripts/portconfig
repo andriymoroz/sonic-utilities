@@ -2,7 +2,7 @@
 """
 portconfig is the utility to show and change ECN configuration
 
-usage: portconfig [-h] [-v] [-s] [-f] [-p PROFILE] [-gmin GREEN_MIN]
+usage: portconfig [-h] [-v] [-s] [-f] [-m] [-p PROFILE] [-gmin GREEN_MIN]
                  [-gmax GREEN_MAX] [-ymin YELLOW_MIN] [-ymax YELLOW_MAX]
                  [-rmin RED_MIN] [-rmax RED_MAX] [-vv]
 
@@ -13,6 +13,7 @@ optional arguments:
   -p     --port                port name
   -s     --speed               port speed in Mbits
   -f     --fec                 port fec mode
+  -m     --mtu                 port mtu in bytes
 """
 from __future__ import print_function
 
